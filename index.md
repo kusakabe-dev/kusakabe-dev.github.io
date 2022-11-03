@@ -25,6 +25,7 @@
 # Links
 
 - [GitHub](https://github.com/kusakabe-dev)
-- [Twitter](https://twitter.com/kusakabe_dev)
+- [Twitter(エンジニア垢)](https://twitter.com/kusakabe_dev)
+- [Twitter(趣味垢)](https://twitter.com/kusakabe_bjj)
 - [FaceBook](https://www.facebook.com/syousa1982)
 - [YouTrust](https://youtrust.jp/users/d8d4b25138f4996afa4c245eb1478a6b/)
