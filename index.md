@@ -1,6 +1,7 @@
 ---
 layout: default
-title: 草壁のページ
+title: Kusakabe Pages
+description: 草壁のポートフォリオサイト
 ---
 
 # 自己紹介
