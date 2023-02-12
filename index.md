@@ -1,4 +1,4 @@
-## 名前
+## 自己紹介
 
 - HN : 草壁
 - name : Yosuke Fujii
