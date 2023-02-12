@@ -1,7 +1,9 @@
 ---
 layout: default
-title: 草壁のプロフィールページ
+title: 草壁のページ
 ---
+
+# 自己紹介
 
 ## 名前
 
