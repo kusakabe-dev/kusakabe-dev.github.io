@@ -1,11 +1,3 @@
----
-layout: default
-title: Kusakabe Pages
-description: 草壁のポートフォリオサイト
----
-
-# 自己紹介
-
 ## 名前
 
 - HN : 草壁
@@ -46,3 +38,4 @@ description: 草壁のポートフォリオサイト
 - [マストドン](https://mstdn.jp/web/@kusakabe_san)
 - [FaceBook](https://www.facebook.com/syousa1982)
 - [Instagram](https://www.instagram.com/kusakabe_bjj/)
+- [Note](https://note.com/kusakabe_bjj)
