@@ -1,9 +1,16 @@
-# Profile
+---
+layout: default
+title: 草壁のプロフィールページ
+---
 
-- id : kusakabe-dev
+# 草壁のプロフィールページ
+
+## 名前
+
+- HN : 草壁
 - name : Yosuke Fujii
 
-# Work
+## 仕事
 
 - Android App Engineer
 
@@ -16,7 +23,7 @@
 
 - [AndroidApps](https://play.google.com/store/apps/developer?id=syo_sa1982) -->
 
-# Hobby
+## 趣味
 
 - ブラジリアン柔術
   - 現在の帯色：青帯
@@ -30,7 +37,7 @@
   - Switchフレコ：SW-0620-3647-5611
   - その他、興味があるものを雑多に
 
-# Links
+## SNSのリンクなど
 
 - [GitHub](https://github.com/kusakabe-dev)
 - [Twitter(エンジニア垢)](https://twitter.com/kusakabe_dev)
@@ -38,4 +45,3 @@
 - [マストドン](https://mstdn.jp/web/@kusakabe_san)
 - [FaceBook](https://www.facebook.com/syousa1982)
 - [Instagram](https://www.instagram.com/kusakabe_bjj/)
-- [YouTrust](https://youtrust.jp/users/d8d4b25138f4996afa4c245eb1478a6b/)
