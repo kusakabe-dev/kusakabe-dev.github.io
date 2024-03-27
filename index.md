@@ -20,9 +20,7 @@
 
 - ブラジリアン柔術
   - 現在の帯色：青帯
-  - 主な戦歴
-    - 2022年 ASJJFアジアオープン 白帯マスター2ライトフェザー級 優勝
-    - 2022年 ASJJFアジアオープン 白帯マスター2無差別級 3位
+  - [戦績](https://docs.google.com/spreadsheets/d/1kq4jYzY7FTJL49iz48RMPUrHxbxWsLsu_hBv_nhH618/edit?usp=sharing)
 - 格闘技観戦
 - ゲーム
   - [FF14](https://jp.finalfantasyxiv.com/lodestone/character/7324621/)
@@ -35,6 +33,7 @@
 - [GitHub](https://github.com/kusakabe-dev)
 - [Twitter(エンジニア垢)](https://twitter.com/kusakabe_dev)
 - [Twitter(趣味垢)](https://twitter.com/kusakabe_bjj)
+- [BlueSky](https://bsky.app/profile/kusakabe.bsky.social)
 - [マストドン](https://mstdn.jp/web/@kusakabe_san)
 - [FaceBook](https://www.facebook.com/syousa1982)
 - [Instagram](https://www.instagram.com/kusakabe_bjj/)
