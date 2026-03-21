@@ -61,7 +61,7 @@
 
 ### 1. 建設現場向けサービスの機能開発及びチームマネジメント (株式会社フォトラクション)
 * **期間:** 2022年12月 〜 現在
-* **体制:** 開発メンバー 1名（2023年半ば） → 5名（現在：社員4名＋副業1名）
+* **体制:** 開発メンバー 1名（2023年半ば） → 4名
 * **技術:** Kotlin, Java, Android Jetpack, CameraX, Jetpack Compose, Firebase, CircleCI, GitHub Actions, Fastlane, BigQuery, Redash, Room, Realm, Claude Code, Cursor
 * **役割・役職:** 実質的なテックリード（便宜上の役割） → **EM（エンジニアリングマネージャー）※2025年6月より就任**
 
