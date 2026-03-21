@@ -6,6 +6,7 @@
 ## 仕事
 
 - Android App Engineer
+  - [詳しい経歴](https://github.com/kusakabe-dev/resume)
 
 <!-- ## JobCareer
 
