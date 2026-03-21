@@ -20,8 +20,8 @@
 ## 趣味
 
 - ブラジリアン柔術
-  - 現在の帯色：青帯
-  - [戦績](https://docs.google.com/spreadsheets/d/1kq4jYzY7FTJL49iz48RMPUrHxbxWsLsu_hBv_nhH618/edit?usp=sharing)
+  - 現在の帯色：紫
+  - [戦績](https://docs.google.com/spreadsheets/d/1kq4jYzY7FTJL49iz48RMPUrHxbxWsLsu_hBv_nhH618/edit?usp=sharing)（更新停止中）
 - 格闘技観戦
 - ゲーム
   - [FF14](https://jp.finalfantasyxiv.com/lodestone/character/7324621/)
