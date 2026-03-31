@@ -32,10 +32,9 @@
 ## SNSのリンクなど
 
 - [GitHub](https://github.com/kusakabe-dev)
+- [Zenn](https://zenn.dev/k_kusakabe)
 - [Twitter(エンジニア垢)](https://twitter.com/kusakabe_dev)
 <!-- - [Twitter(趣味垢)](https://twitter.com/kusakabe_bjj) -->
-- [BlueSky](https://bsky.app/profile/kusakabe.bsky.social)
-- [マストドン](https://mstdn.jp/web/@kusakabe_san)
 - [FaceBook](https://www.facebook.com/syousa1982)
 - [Instagram](https://www.instagram.com/kusakabe_bjj/)
 - [Note](https://note.com/kusakabe_bjj)
