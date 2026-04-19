@@ -41,8 +41,9 @@
   * アーキテクチャ選定・導入・推進
 
 ### 開発支援ツール・AI
-* **Claude Code, Cursor, Gemini, ChatGPT**
+* **Claude Code, Cursor, Codex, ChatGPT, Gemini**
   * 生成AIを活用したコーディング支援、不具合調査、テストコード作成
+  * 複数のAIツール（ChatGPT、Claude Code、Codex）に役割を分担させ、要件整理から設計、実装、レビューまでを連携させる開発フローの構築と運用
   * 組織のセキュリティ・ガバナンス方針に合わせたツール選定と移行対応
   * `.cursor/rules` 等を用いたプロンプト標準化によるアーキテクチャ遵守・レビューコスト削減の推進
 
@@ -62,7 +63,7 @@
 ### 1. 建設現場向けサービスの機能開発及びチームマネジメント (株式会社フォトラクション)
 * **期間:** 2022年12月 〜 現在
 * **体制:** 開発メンバー 1名（2023年半ば） → 4名
-* **技術:** Kotlin, Java, Android Jetpack, CameraX, Jetpack Compose, Firebase, CircleCI, GitHub Actions, Fastlane, BigQuery, Redash, Room, Realm, Claude Code, Cursor
+* **技術:** Kotlin, Java, Android Jetpack, CameraX, Jetpack Compose, Firebase, CircleCI, GitHub Actions, Fastlane, BigQuery, Redash, Room, Realm, Claude Code, Cursor, Codex, ChatGPT
 * **役割・役職:** 実質的なテックリード（便宜上の役割） → **EM（エンジニアリングマネージャー）※2025年6月より就任**
 
 #### 役割・実績
@@ -78,7 +79,7 @@
 **【品質保証体制の構築とOSアップデート対応（2024年〜）】**
 * **品質保証とリリースフローの改善:** MagicPod導入によるテスト自動化、Slackリマインダを用いたリリースモニタリングの習慣化、週次でのクラッシュレポート棚卸しを運用。
 * **データドリブンな改善:** BigQueryやRedashを用いた不具合調査やユーザー行動分析を標準化。RealmからRoomへのアプリ内DB一本化計画を推進中。
-* **生成AIツールの導入と推進:** 開発効率化のためCursorを導入後、組織方針に合わせてClaude Codeへ移行。`.cursor/rules` を用いてViewModelやコンポーネント構成のルールを定義し、コード生成の品質向上とレビュー工数を削減。
+* **生成AIを活用した開発フローの実践:** 組織方針に合わせたClaude Codeへの移行や `.cursor/rules` を用いたルール定義に加え、複数のAIツールを連携させた開発プロセスを構築。直近のOOM（メモリ不足）改善対応では、ChatGPT（論点整理）、Claude Code（実装プラン作成・設計レビュー）、Codex（実装）と役割を分担。AI間でコードレビューを往復させる仕組みを取り入れることで、人間がレビューする前の論点消化を実現し、複雑な課題解決における品質と生産性の向上に貢献。
 * **Android 15対応:** 
   * API Level 35更新に伴うUI崩れに対し、`android:windowOptOutEdgeToEdgeEnforcement` を用いて既存UIを維持し、将来的な移行計画を立案。
   * 16KBページサイズ対応において、提供スクリプトとAIを活用してネイティブライブラリのELFアライメント解析を実施し、不要なAARの廃止等による対応を完遂。
