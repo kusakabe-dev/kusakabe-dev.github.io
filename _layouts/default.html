@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>｛｛ page.title ｝｝ - @kusakabe-dev</title>
+    <style>
+      @media print {
+        /* ナビゲーションやフッターを隠す */
+        header, footer, .site-header, nav { display: none !important; }
+        /* セクションやリストがページをまたいで切れないようにする */
+        section, .job-item, li { break-inside: avoid; }
+        h2, h3 { break-after: avoid; }
+        /* 余白調整 */
+        @page { margin: 15mm; }
+      }
+    </style>
+  </head>
+
+  <body>
+    ｛｛ content ｝｝
+  </body>
+</html>
