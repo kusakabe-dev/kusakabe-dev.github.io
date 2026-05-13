@@ -5,6 +5,9 @@
     <title>{{ page.title }} - @kusakabe-dev</title>
     <style>
       @media print {
+        /* 印刷時に不要な要素を非表示 */
+        header, footer, .site-header, nav { display: none !important; }
+    
         /* リスト全体と、個別のリスト項目（li）の両方で分割を禁止する */
         ul, ol {
           break-inside: auto; /* 全体は許可するが、項目単位で制御する */
@@ -26,6 +29,9 @@
         section, .job-item {
           break-inside: avoid;
         }
+
+        /* 余白の最適化 */
+        @page { margin: 15mm; }
       }
     </style>
   </head>
