@@ -5,13 +5,27 @@
     <title>｛｛ page.title ｝｝ - @kusakabe-dev</title>
     <style>
       @media print {
-        /* ナビゲーションやフッターを隠す */
-        header, footer, .site-header, nav { display: none !important; }
-        /* セクションやリストがページをまたいで切れないようにする */
-        section, .job-item, li { break-inside: avoid; }
-        h2, h3 { break-after: avoid; }
-        /* 余白調整 */
-        @page { margin: 15mm; }
+        /* リスト全体と、個別のリスト項目（li）の両方で分割を禁止する */
+        ul, ol {
+          break-inside: auto; /* 全体は許可するが、項目単位で制御する */
+        }
+
+        li {
+          break-inside: avoid; /* リストの1項目がページをまたぐのを防ぐ */
+          margin-bottom: 0.5em; /* 項目間の微調整 */
+        }
+
+        /* セクションのタイトル（h2, h3）の直後での改ページを厳格に禁止 */
+        h2, h3 {
+          break-after: avoid-page !important;
+          page-break-after: avoid !important;
+        }
+
+        /* 職歴の各ブロック（もしクラスを付けていれば）を塊として扱う */
+        /* 現状のHTML構造に合わせて、特定の<div>や<section>があれば指定 */
+        section, .job-item {
+          break-inside: avoid;
+        }
       }
     </style>
   </head>
