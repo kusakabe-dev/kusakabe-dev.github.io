@@ -31,4 +31,4 @@ Yosuke Fujii（以下、「開発者」といいます）は、スマートフ�
   - X: [kusakabe-dev](https://x.com/kusakabe_dev)
 
 ---
-**制定日**: 2026年7月11日
+**制定日**: 2026年7月12日
