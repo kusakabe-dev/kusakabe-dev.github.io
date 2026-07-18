@@ -24,17 +24,21 @@
   - [戦績](https://docs.google.com/spreadsheets/d/1kq4jYzY7FTJL49iz48RMPUrHxbxWsLsu_hBv_nhH618/edit?usp=sharing)（更新停止中）
 - 格闘技観戦
 - ゲーム
-  - [FF14](https://jp.finalfantasyxiv.com/lodestone/character/7324621/)
-  - PSN：Kusakabe1982
-  - Switchフレコ：SW-0620-3647-5611
+  - 他のゲームに浮気しつつ、FF14を断続的にダラダラと
+  - 最近はスト６始めた
   - その他、興味があるものを雑多に
 
-## SNSのリンクなど
+## その他/SNSのリンクなど
 
 - [GitHub](https://github.com/kusakabe-dev)
 - [Zenn](https://zenn.dev/k_kusakabe)
-- [Twitter(エンジニア垢)](https://twitter.com/kusakabe_dev)
+- [Twitter](https://twitter.com/kusakabe_dev)
 <!-- - [Twitter(趣味垢)](https://twitter.com/kusakabe_bjj) -->
-- [FaceBook](https://www.facebook.com/syousa1982)
 - [Instagram](https://www.instagram.com/kusakabe_bjj/)
 - [Note](https://note.com/kusakabe_bjj)
+- [ブログというか勉強用メモ](blog)
+- ゲーム関連
+  - [FF14](https://jp.finalfantasyxiv.com/lodestone/character/7324621/)
+  - PSN：Kusakabe1982
+  - Switchフレコ：SW-0620-3647-5611
+  - Discord：kusakabe_bjj
