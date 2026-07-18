@@ -3,6 +3,10 @@
   <head>
     <meta charset='utf-8'>
     <title>{{ page.title }} 藤井陽介</title>
+    <script type="module">
+      import mermaid from 'https://jsdelivr.net';
+      mermaid.initialize({ startOnLoad: true });
+    </script>
     <style>
       @media print {
         /* 印刷時に不要な要素を非表示 */
