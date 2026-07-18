@@ -18,4 +18,5 @@
 - [プライバシーポリシー](privacy-policy.md)
 
 ## サポート・お問い合わせ
-不具合の報告や機能のご要望などがありましたら、[GitHub Issues](https://github.com/kusakabe-dev/JiuJitsuScoreBoard_KMP/issues) までご連絡ください。
+不具合の報告や機能のご要望などがありましたら、以下のメールアドレスまでご連絡ください。
+- **Email**: [kusakabe.tech.bjj@gmail.com](mailto:kusakabe.tech.bjj@gmail.com)
