@@ -8,6 +8,10 @@
 - Android App Engineer
   - [詳しい経歴](resume)
 
+## 個人開発アプリ
+
+- [Jiu-Jitsu ScoreBoard（柔術スコアボードアプリ）](jiujitsu-scoreboard/)
+
 <!-- ## JobCareer
 
 - [SkillSheet](https://drive.google.com/file/d/1D9Alc0jFSaUrUBs-sIZ3agEkR8KofeIv/view?usp=sharing)
