@@ -13,6 +13,13 @@ Jiu Jitsu ScoreBoard（柔術スコアボード）は、ブラジリアン柔術
 
 ### 選手名のカスタマイズ（変更）
 試合開始前またはリセット直後（タイマー停止状態）に、各選手のラベル（デフォルトは `PLAYER 1` / `PLAYER 2`）にある `✎` アイコンをタップすると、選手の名前を任意に変更・入力することができます。
+
+<div style="display: flex; justify-content: space-between; margin: 16px 0;">
+  <img src="screenshot2_1.png" alt="変更アイコンのタップ" style="width: 32%; border: 1px solid #ddd; border-radius: 8px;">
+  <img src="screenshot2_2.png" alt="名前の入力" style="width: 32%; border: 1px solid #ddd; border-radius: 8px;">
+  <img src="screenshot2_3.png" alt="変更完了" style="width: 32%; border: 1px solid #ddd; border-radius: 8px;">
+</div>
+
 ※誤操作を防ぐため、試合中（タイマー稼働時）は名前の変更ができません。
 
 ### スコアの加算・減算
