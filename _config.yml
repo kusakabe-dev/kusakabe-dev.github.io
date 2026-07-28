@@ -1,5 +1,11 @@
-markdown: redcarpet
-redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
+markdown: kramdown
+theme: jekyll-theme-primer
 title: Kusakabe Pages
 description: 草壁のポートフォリオサイト
+google_analytics: G-90MVWTZSDS
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"

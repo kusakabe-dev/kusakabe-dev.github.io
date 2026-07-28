@@ -1,0 +1,44 @@
+{% if site.google_analytics %}
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '{{ site.google_analytics }}');
+</script>
+{% endif %}
+
+<!-- Style for Mermaid diagram container card -->
+<style>
+  div.mermaid {
+    text-align: center;
+    background-color: #f6f8fa;
+    border-radius: 6px;
+    padding: 16px;
+    margin: 16px 0;
+    overflow-x: auto;
+  }
+</style>
+
+<!-- Mermaid.js for rendering ```mermaid blocks -->
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  
+  document.addEventListener('DOMContentLoaded', () => {
+    const mermaidElements = document.querySelectorAll('code.language-mermaid, div.language-mermaid pre, pre.language-mermaid');
+    mermaidElements.forEach((el) => {
+      const code = el.textContent;
+      const container = document.createElement('div');
+      container.className = 'mermaid';
+      container.textContent = code;
+      
+      const target = el.closest('div.highlighter-rouge') || el.closest('pre') || el;
+      target.parentNode.replaceChild(container, target);
+    });
+    
+    mermaid.initialize({ startOnLoad: true });
+    mermaid.run();
+  });
+</script>
