@@ -1,3 +1,5 @@
 *.pdf
 .DS_Store
 trash
+_site/
+.jekyll-cache/
