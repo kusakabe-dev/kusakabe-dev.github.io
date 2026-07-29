@@ -11,3 +11,6 @@ defaults:
       path: ""
     values:
       layout: "default"
+
+# Google Analytics 4
+google_analytics: G-90MVWTZSDS
