@@ -12,7 +12,7 @@ title: Jiu-Jitsu ScoreBoard
 - **見やすいタイマー**: 試合時間のカスタマイズや、開始・一時停止・リセットがスムーズ
 
 ## ダウンロード
-- Android版: 近日公開予定！
+- Android版: [Google Play Store からダウンロード](https://play.google.com/store/apps/details?id=net.kusakabetech.jiujitsuscoreboard)
 
 ## ドキュメント
 アプリの詳しい使い方や、プライバシーポリシーについては以下のリンクからご確認ください。
