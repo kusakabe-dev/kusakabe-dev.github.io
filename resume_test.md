@@ -1,5 +1,4 @@
 ---
-layout: default
 title: 職務経歴書
 ---
 # 職務経歴書
