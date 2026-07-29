@@ -1,3 +1,6 @@
+---
+title: Kusakabe Pages
+---
 ## 自己紹介
 
 - HN : 草壁

@@ -1,3 +1,6 @@
+---
+title: Jiu-Jitsu ScoreBoard
+---
 # Jiu-Jitsu ScoreBoard
 
 ブラジリアン柔術（BJJ）の試合に特化した、シンプルで使いやすいスコアボードアプリです。
