@@ -1,5 +1,5 @@
 ---
-title: Kusakabe Pages
+title: Home
 ---
 ## 自己紹介
 
