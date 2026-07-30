@@ -75,3 +75,20 @@ AIはロジックの構築には強いですが、**「人間が実際に使う�
 AIは「万能の魔法」ではありません。しかし、プロジェクトの絶対ルール（ドメイン知識）を教え込み、ロードマップを先に書かせるという「手綱の握り方」さえ覚えれば、個人開発のスピードを何倍にも引き上げてくれる最強の相棒になります。
 
 この記事が、これからKMPやAIを使ったアプリ開発に挑戦する方の参考になれば幸いです！
+
+---
+
+## 参考資料（1次情報）
+- **Kotlin Multiplatform**: [JetBrains 公式ドキュメント](https://kotlinlang.org/docs/multiplatform.html)
+- **Google Play クローズドテスト要件**: [個人開発者向けのテスト要件（Google Play Console ヘルプ）](https://support.google.com/googleplay/android-developer/answer/9859348)
+- **JiuJitsuScoreBoard KMP**: [GitHub リポジトリ](https://github.com/kusakabe-dev/JiuJitsuScoreBoard_KMP)
+- **IBJJF 公式ルールブック**: ドメインロジックのベースとなったルール（※参考: [IBJJF Rules](https://ibjjf.com/books-videos)）
+
+## 補足：本記事の執筆背景とAIプロンプト
+本記事自体も、開発時の「壁打ちログサマリー」をもとにAntigravity（Gemini）と対話しながら執筆しました。
+
+**▼ 開発で実際に使用したロードマップ作成プロンプトの例**
+> 機能追加を行う前に、いきなりコードを書かず、まずは実装の優先順位とKMP特有の技術的アプローチ、懸念事項をMarkdownで整理して `ROADMAP.md` として提案してください。
+
+**▼ ドメイン知識注入のアプローチ**
+> 初期から公式ルールブックを読み込ませたほか、`.cursorrules` や `AI_SKILLS.md` を活用し、「勝敗の自動判定はしない」「ポイントの他にアドバンテージとペナルティがある」といったドメインルールを常にコンテキストとして持たせる運用を行いました。
