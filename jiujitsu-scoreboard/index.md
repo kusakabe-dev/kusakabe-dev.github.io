@@ -15,9 +15,10 @@ title: Jiu-Jitsu ScoreBoard
 - Android版: [Google Play Store からダウンロード](https://play.google.com/store/apps/details?id=net.kusakabetech.jiujitsuscoreboard)
 
 ## ドキュメント
-アプリの詳しい使い方や、プライバシーポリシーについては以下のリンクからご確認ください。
+アプリの詳しい使い方や、プライバシーポリシー、アップデート履歴については以下のリンクからご確認ください。
 
 - [ユーザーマニュアル](manual)
+- [リリースノート](release-notes)
 - [プライバシーポリシー](privacy-policy)
 
 ## サポート・お問い合わせ
