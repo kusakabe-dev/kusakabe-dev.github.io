@@ -1,5 +1,7 @@
 ---
 title: Antigravity × KMPで挑む個人開発：構想から約1ヶ月でGoogle Play製品版リリースまで駆け抜けた話
+date: 2026-07-30
+tags: [KMP, Android, Compose, Antigravity]
 ---
 
 # Antigravity × KMPで挑む個人開発：構想から約1ヶ月でGoogle Play製品版リリースまで駆け抜けた話
