@@ -18,6 +18,7 @@ title: 勉強用ログ (Blog)
 
 ## 記事一覧
 
+- [2026-08-23: iOS横画面固定アプリでAdMobインタースティシャル広告が黒画面になる原因と対策](2026-08-23-admob-interstitial-ios-landscape-black-screen)
 - [2026-08-11: アプリの短い効果音（ブザー等）に mp3 ではなく wav を使うべき明確な理由](2026-08-11-wav-vs-mp3-for-app-sounds)
 - [2026-08-11: iOS版リリースに向けたタスク細分化計画](2026-08-11_ios-plan)
 - [2026-07-30: 【備忘録】クローズドテスト後の製品版アクセス申請で実際に送ったテキスト](2026-07-30-google-play-production-request)
