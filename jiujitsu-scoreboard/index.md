@@ -12,6 +12,7 @@ title: Jiu-Jitsu ScoreBoard
 - **見やすいタイマー**: 試合時間のカスタマイズや、開始・一時停止・リセットがスムーズ
 
 ## ダウンロード
+- iOS版: [App Store からダウンロード](https://apps.apple.com/jp/app/jiujitsu-scoreboard/id6804345753)
 - Android版: [Google Play Store からダウンロード](https://play.google.com/store/apps/details?id=net.kusakabetech.jiujitsuscoreboard)
 
 ## ドキュメント
