@@ -18,6 +18,7 @@ title: 勉強用ログ (Blog)
 
 ## 記事一覧
 
+- [2026-08-29: App Store Connect「Appのプライバシー」設定と用語解説（AdMob・Firebase・ATT対応）](2026-08-29-app-store-privacy-nutrition-labels)
 - [2026-08-23: iOS横画面固定アプリでAdMobインタースティシャル広告が黒画面になる原因と対策](2026-08-23-admob-interstitial-ios-landscape-black-screen)
 - [2026-08-11: アプリの短い効果音（ブザー等）に mp3 ではなく wav を使うべき明確な理由](2026-08-11-wav-vs-mp3-for-app-sounds)
 - [2026-08-11: iOS版リリースに向けたタスク細分化計画](2026-08-11_ios-plan)
