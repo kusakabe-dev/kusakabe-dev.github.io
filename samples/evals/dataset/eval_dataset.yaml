@@ -1,0 +1,165 @@
+# ==============================================================================
+# eval_dataset.yaml - Coding Agent Evaluation Dataset for Android
+# 
+# SWE-benchスタイルのタスク定義データセット。
+# 過去のIssueやPRをベースに、Agentへの指示（prompt）と合否判定基準（verification, rubric）を定義します。
+# ==============================================================================
+
+version: "1.0"
+project: "Android / KMP Evaluation Benchmark"
+tasks:
+  - id: "TASK-001"
+    title: "タイマー終了時にブザー音が多重再生される不具合の修正"
+    category: "bugfix"
+    difficulty: "easy"
+    prompt: |
+      【現象】
+      試合時間が0秒になった際、ブザー音が複数回重複して再生されてしまう不具合が報告されています。
+      
+      【原因と要件】
+      - MatchTimer.kt 内で 0秒検知時のコールバックが複数フレーム連続で呼ばれている可能性があります。
+      - 残り時間が0秒になった最初の1回のみ `onTimerFinished()` を呼ぶようにガード条件を追加してください。
+      - 既存のタイマー開始・停止・一時停止ロジックは変更しないでください。
+    expected_affected_files:
+      - "core/timer/src/commonMain/kotlin/com/example/timer/MatchTimer.kt"
+    protected_files:
+      - "build.gradle.kts"
+      - "gradle/libs.versions.toml"
+    verification:
+      unit_test_command: "./gradlew :core:timer:test --tests 'com.example.timer.MatchTimerTest'"
+      must_pass_tests:
+        - "test_timer_finished_callback_invoked_only_once"
+        - "test_timer_pause_and_resume"
+    rubric:
+      - id: "R-01"
+        criterion: "要件充足: 0秒到達時の多重再生が確実にガードされているか"
+        type: "boolean"
+      - id: "R-02"
+        criterion: "副作用なし: 既存のタイマーライフサイクル（一時停止・再開）にデグレがないか"
+        type: "boolean"
+      - id: "R-03"
+        criterion: "スコープ遵守: MatchTimer.kt 以外の無関係なファイルを変更していないか"
+        type: "boolean"
+
+  - id: "TASK-002"
+    title: "柔術ルール: ペナルティ累積による相手へのアドバンテージ加算ロジック実装"
+    category: "feature"
+    difficulty: "medium"
+    prompt: |
+      【要件】
+      IBJJF公式ルールに基づき、反則（ペナルティ）累積時の得点連動ロジックを実装してください。
+      
+      【仕様詳細】
+      - 1回目のペナルティ: 指導のみ（得点加算なし）
+      - 2回目のペナルティ: 相手選手にアドバンテージ +1
+      - 3回目のペナルティ: 相手選手にアドバンテージ +1（累計+2点分）
+      - 4回目のペナルティ: 反則失格（DQフラグをON）
+      
+      【注意】
+      - `ScoreCalculator.kt` に実装してください。
+      - ペナルティが取り消された場合の減算処理も整合性を保ってください。
+    expected_affected_files:
+      - "domain/src/commonMain/kotlin/com/example/domain/ScoreCalculator.kt"
+    protected_files:
+      - "build.gradle.kts"
+    verification:
+      unit_test_command: "./gradlew :domain:test --tests 'com.example.domain.ScoreCalculatorTest'"
+      must_pass_tests:
+        - "test_penalty_to_advantage_progression"
+        - "test_penalty_undo_reverts_advantage"
+    rubric:
+      - id: "R-01"
+        criterion: "ドメインロジック: 1〜4回目のペナルティ処理がIBJJF規則通りに動作しているか"
+        type: "boolean"
+      - id: "R-02"
+        criterion: "Undo整合性: ペナルティ取り消し時にアドバンテージが正しく減算されるか"
+        type: "boolean"
+      - id: "R-03"
+        criterion: "Null Safety: Kotlinの強制アンラップ ('!!') を使用していないか"
+        type: "boolean"
+
+  - id: "TASK-003"
+    title: "Compose UI: 不要な状態ホイスティング違反の解消と再コンポジション最適化"
+    category: "refactor"
+    difficulty: "medium"
+    prompt: |
+      【背景】
+      ScoreBoardScreen.kt において、秒単位のカウントダウン更新のたびに画面全体のComposableが再描画されてしまい、パフォーマンス低下を招いています。
+      
+      【要件】
+      - `ScoreBoardScreen` 全体ではなく、タイマー表示用の `TimerText` Composable のみに再描画スコープを限定してください。
+      - 不要なラムダの再インスタンス化を防ぐため、安定した型（Immutable）を使用するか、derivedStateOf を活用してください。
+      - UIの外観（サイズ、色、レイアウト）は一切変更しないでください。
+    expected_affected_files:
+      - "ui/src/commonMain/kotlin/com/example/ui/ScoreBoardScreen.kt"
+    protected_files:
+      - "build.gradle.kts"
+    verification:
+      unit_test_command: "./gradlew :ui:test"
+    rubric:
+      - id: "R-01"
+        criterion: "再コンポジションスコープが TimerText に局所化されているか"
+        type: "boolean"
+      - id: "R-02"
+        criterion: "UIのプレビューおよび既存のUIテストが壊れていないか"
+        type: "boolean"
+
+  - id: "TASK-004"
+    title: "選手名入力欄のバリデーション強化とユニットテスト追加"
+    category: "test"
+    difficulty: "easy"
+    prompt: |
+      【要件】
+      `PlayerValidator.kt` に選手名のバリデーション処理を追加し、それに対応するユニットテストを網羅してください。
+      
+      【バリデーション仕様】
+      1. 前後の空白を除去した状態で1文字以上50文字以内であること
+      2. 空文字・空白のみは不可（エラーメッセージ: "選手名を入力してください"）
+      3. 改行コード（\n, \r）が含まれている場合は不可（エラーメッセージ: "改行は使用できません"）
+      
+      【テスト要件】
+      - 境界値（0文字、1文字、50文字、51文字）のテストケースを網羅すること。
+    expected_affected_files:
+      - "domain/src/commonMain/kotlin/com/example/domain/PlayerValidator.kt"
+      - "domain/src/commonTest/kotlin/com/example/domain/PlayerValidatorTest.kt"
+    verification:
+      unit_test_command: "./gradlew :domain:test --tests 'com.example.domain.PlayerValidatorTest'"
+      must_pass_tests:
+        - "test_valid_player_names"
+        - "test_empty_and_whitespace_names"
+        - "test_boundary_lengths"
+        - "test_contains_newline"
+    rubric:
+      - id: "R-01"
+        criterion: "すべてのバリデーションルールが仕様通りに実装されているか"
+        type: "boolean"
+      - id: "R-02"
+        criterion: "ユニットテストが境界値を網羅しているか"
+        type: "boolean"
+
+  - id: "TASK-005"
+    title: "設定画面（SettingsDialog）のクラッシュ修正（NullPointerException防止）"
+    category: "bugfix"
+    difficulty: "easy"
+    prompt: |
+      【現象】
+      設定画面で音声設定を初期化する際、初回起動時にローカルストレージが空だと `NullPointerException` が発生してクラッシュします。
+      
+      【要件】
+      - `AudioSettingsRepository.kt` の `loadSettings()` において、保存値がnullの場合はデフォルト設定オブジェクト（`AudioSettings.DEFAULT`）を返すように安全にハンドリングしてください。
+      - `!!` 演算子は使わず、エルビス演算子（`?:`）を使用してください。
+    expected_affected_files:
+      - "core/data/src/commonMain/kotlin/com/example/data/AudioSettingsRepository.kt"
+    protected_files:
+      - "build.gradle.kts"
+    verification:
+      unit_test_command: "./gradlew :core:data:test --tests 'com.example.data.AudioSettingsRepositoryTest'"
+      must_pass_tests:
+        - "test_load_settings_when_empty_returns_default"
+    rubric:
+      - id: "R-01"
+        criterion: "初回空データ時にクラッシュせずデフォルト値が返されるか"
+        type: "boolean"
+      - id: "R-02"
+        criterion: "Null Safetyが徹底され、!! が使われていないか"
+        type: "boolean"
