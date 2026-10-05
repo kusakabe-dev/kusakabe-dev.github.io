@@ -16,6 +16,7 @@ tags: [Evals, AI, LLM, Android, Testing, Evaluation]
 
 ## 更新履歴（Changelog）
 
+- **2026-10-05**: Mermaid構文エラーの修正（特殊文字・括弧を含むノードラベルのクォート対応）
 - **2026-10-03**: 初版作成（Evalsの基礎理解、Androidエンジニア視点での接点、Coding Agent評価のアイデア、学習ロードマップの整理）
 
 ---
@@ -60,10 +61,10 @@ Evalsは、
 
 ```mermaid
 flowchart LR
-    Input[Input] --> Program[Program]
-    Program --> Output[Output]
-    Output --> Compare{Expected Value と比較}
-    Compare --> PassFail[Pass / Fail]
+    Input["Input"] --> Program["Program"]
+    Program --> Output["Output"]
+    Output --> Compare{"Expected Value と比較"}
+    Compare --> PassFail["Pass / Fail"]
 ```
 
 一方、LLMやAI Agentでは自然言語やコード生成など「唯一の正解」が存在しないケースが多い。そのため、複数の評価手法を組み合わせて多面的に評価する。
@@ -94,13 +95,13 @@ AI Agentの場合も、本質的な改善サイクルは酷似している。
 
 ```mermaid
 flowchart TD
-    Dataset[Eval Dataset (タスク・要件)] --> Agent[AI Agent]
-    Agent --> Output[Output / Action (コード差分・PR)]
-    Output --> Grader[Grader (Build / Test / Lint / Judge)]
-    Grader --> Score[Score / 判定結果]
-    Score --> Feedback{失敗ケースの分析}
-    Feedback -->|プロンプト・モデル・ルールの改善| Agent
-    Feedback -->|エッジケースの蓄積| Dataset
+    Dataset["Eval Dataset (タスク・要件)"] --> Agent["AI Agent"]
+    Agent --> Output["Output / Action (コード差分・PR)"]
+    Output --> Grader["Grader (Build / Test / Lint / Judge)"]
+    Grader --> Score["Score / 判定結果"]
+    Score --> Feedback{"失敗ケースの分析"}
+    Feedback -->|"プロンプト・モデル・ルールの改善"| Agent
+    Feedback -->|"エッジケースの蓄積"| Dataset
 ```
 
 そのため、自分の中ではEvalsを
@@ -116,7 +117,7 @@ flowchart TD
 今のところ、「Android EngineerからEvals Engineerへ転身する」という考え方ではない。
 むしろ目指したいのは以下の掛け合わせ：
 
-$$\text{Android Engineer} + \text{AI Engineering} + \text{Evaluation設計}$$
+> **Android Engineer ＋ AI Engineering ＋ Evaluation設計**
 
 つまり、
 
