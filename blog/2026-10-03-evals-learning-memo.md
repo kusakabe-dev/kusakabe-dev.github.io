@@ -285,3 +285,22 @@ Evaluation設計 ≧ Software Testing > AI Agentの理解 > LLMの基本 > Pytho
 * [samples/evals/run_android_deterministic_eval.sh](../samples/evals/run_android_deterministic_eval.sh): Gradle Build, Test, Lint, Diff検査を一括実行するランナー
 * [samples/evals/dataset/eval_dataset.yaml](../samples/evals/dataset/eval_dataset.yaml): 5ケース分のSWE-bench風タスク定義データセット
 * [samples/evals/judge/llm_judge_prompt_template.md](../samples/evals/judge/llm_judge_prompt_template.md): LLM-as-a-Judge用の二値判定ルーブリックプロンプト
+
+
+## イベント視聴メモ
+
+### Evalsエンジニアの一週間
+
+* https://hamel.dev/blog/posts/evals/
+* https://arxiv.org/abs/2404.12272
+* スイスチーズモデル
+  * https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents
+
+
+### 専門領域のAIをどう評価するか
+
+* https://qiita.com/Simon_Zhang/items/c0dddcf161a0c64c8d61
+
+### Xの投稿
+
+https://x.com/search?q=%23Forkwell_Evals&src=typed_query&f=live
